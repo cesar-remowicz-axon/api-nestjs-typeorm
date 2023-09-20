@@ -19,7 +19,6 @@ export class AppService {
       return new Employee;
     }
     const employee = await this.user.findOne({ where: { badge } });
-    console.log('employee', employee)
     return employee;
   }
 
